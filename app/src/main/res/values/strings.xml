@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="location">Kuala Lumpur, MY</string>
+    <string name="temperature">29</string>
+    <string name="button_refresh">Refresh</string>
+    <string name="wind_speed">1.5 mps</string>
+    <string name="humidity">79%</string>
+    <string name="cloudiness">75%</string>
+    <string name="credit">CREDIT Climacons by @adamwhitcroft.</string>
+</resources>
