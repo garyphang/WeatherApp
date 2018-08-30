@@ -14,7 +14,7 @@
         android:stretchColumns="2">
 
         <TextView
-            android:id="@+id/place"
+            android:id="@+id/location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
@@ -24,9 +24,10 @@
             android:textSize="15dp" />
 
         <TextView
+            android:id="@+id/temperature"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/place"
+            android:layout_below="@+id/location"
             android:layout_margin="5dp"
             android:drawableLeft="@drawable/ic_temperature"
             android:drawablePadding="5dp"
@@ -36,6 +37,7 @@
             android:textSize="20dp" />
 
         <Button
+            android:id="@+id/button_refresh"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:layout_alignParentRight="true"
@@ -47,17 +49,17 @@
             />
 
         <ImageView
-            android:id="@+id/weather_icon"
+            android:id="@+id/icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:src="@drawable/ic_thunderstorm_large" />
 
         <TextView
-            android:id="@+id/humid"
+            android:id="@+id/humidity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/weather_icon"
+            android:layout_below="@id/icon"
             android:layout_centerHorizontal="true"
             android:layout_margin="5dp"
             android:drawableLeft="@drawable/ic_humidity"
@@ -67,26 +69,30 @@
             android:textSize="15dp" />
 
         <TextView
+            android:id="@+id/wind_speed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/weather_icon"
+            android:layout_below="@id/icon"
             android:layout_margin="5dp"
-            android:layout_toLeftOf="@id/humid"
+            android:layout_toLeftOf="@id/humidity"
             android:drawableLeft="@drawable/ic_wind"
             android:drawablePadding="5dp"
             android:text="@string/wind_speed"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
 
         <TextView
+            android:id="@+id/cloudiness"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/weather_icon"
+            android:layout_below="@id/icon"
             android:layout_margin="5dp"
-            android:layout_toRightOf="@id/humid"
+            android:layout_toRightOf="@id/humidity"
             android:drawableLeft="@drawable/ic_cloudiness"
             android:drawablePadding="5dp"
             android:text="@string/cloudiness"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="wrap_content"
